@@ -26,8 +26,6 @@ scissors = '''
       (____)
 ---.__(___)
 '''
-x = ("You win")
-y = ("You lose")
 
 game_choice = [rock, paper, scissors]
 
@@ -42,25 +40,25 @@ print("Computer chose:")
 print(game_choice[computer])
 
 if user == 0 and computer == 1:
-    print(y)
+    print("You lose!")
 elif computer == 0 and user == 1:
-    print(x)
+    print("You win!")
 elif user == 0 and computer == 2:
-    print(x)
+    print("You win!")
 elif computer == 0 and user == 2:
-    print(y)
+    print("You lose!")
 elif user == 1 and computer == 0:
-    print(x)
+    print("You win!")
 elif computer == 1 and user == 0:
-    print(y)
+    print("You lose!")
 elif user == 1 and computer == 2:
-    print(y)
+    print("You lose!")
 elif computer == 1 and user == 2:
-    print(x)
+    print("You win!")
 elif user == 2 and computer == 0:
-    print(y)
+    print("You lose!")
 elif computer == 2 and user == 0:
-    print(x)
+    print("You win!")
 else:
     print("It's a draw!")
         
